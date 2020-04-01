@@ -1,0 +1,81 @@
+body {
+background-color: steelblue; 
+font-size: 24px;
+font-weight:bold;
+}
+
+h1 {color: lightgreen;
+    font-size: 30px;
+    text-align: center;
+
+} 
+
+p {color:lightgreen;
+
+}
+h2 {color:lightgreen;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.tab { 
+    background-color: darkslategray;
+    border: 2px solid salmon;
+   border-radius: 10px; 
+}
+ 
+
+
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 5px;
+    background: darkslategray;
+    color: lightgreen;
+    min-width: 50px;
+    text-align: center;
+    border:2px solid lightgreen;
+    border-radius: 10px;
+
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    color: lightgreen;
+  }
+  
+  .input-field:focus {
+    border: 2px solid lightgreen;
+    
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: darkslategray;
+    color: lightgreen;
+    padding: 20px 20px;
+    border: 2px solid lightgreen;
+    border-radius: 15px; 
+    cursor: pointer;
+    height: 125%;
+    width: 100%;
+    opacity: 0.9;
+    text-align: center;
+  }
+  .input{
+      height: 150%;
+      width: 100%;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
