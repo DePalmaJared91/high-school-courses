@@ -1,36 +1,46 @@
 body {
-background-color: lightslategray; 
+background-color: #2e4a62; 
+color: #2e4a62;
 font-size: 24px;
 font-weight:bold;
+text-align: center;
+border: 3px solid #2e4a62; 
+    border-radius: 15px;
 }
 
 .jumbotron{
-    background-color: lightslategray;
+    background-color: #eadedb;
+ 
 }
-.jumbotron .jumbotron-fluid .container{
-    background-color: lightslategray;
-}
+
+    
+
 div.container{
-    background-color: lightslategray;
+    background-color: #2e4a62;
 }
 
 
-h1 {color: lightgreen;
+h1 {color: #2e4a62;
     font-size: 30px;
     font-weight: bolder;
     text-align: center;
-    background-color: lightslategray;
+    background-color: #b4b7ba;
+    border: 3px solid lightslategray;
+    border-radius: 15px;
 
 } 
 
-p {color: lightgreen;
-    font-size: 24px;
+p {color: #2e4a62 ;
+    font-size: 16px;
     text-align: center;
     font-weight: bold;
     background-color: lightslategray;
+    border: 3px solid #b4b7ba;
+    border-radius: 15px;
+
 
 }
-h2 {color:lightgreen;
+h2 {color:#eadedb;
     font-size: 24px;
     text-align: center;
     font-weight: bold;
@@ -38,8 +48,8 @@ h2 {color:lightgreen;
 }
 
 .tab { 
-    background-color: darkslategray;
-    border: 5px solid lightgreen;
+    background-color: #2e4a62;
+    border: 5px solid #b4b7ba;
    border-radius: 15px;
 
 }
@@ -52,16 +62,16 @@ h2 {color:lightgreen;
     display: -ms-flexbox; /* IE10 */
     display: flex;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
   .icon {
     padding: 5px;
-    background: darkslategray;
-    color: lightgreen;
+    background: #2e4a62;
+    color: #eadedb;
     min-width: 50px;
     text-align: center;
-    border:2px solid lightgreen;
+    border:2px solid #eadedb;
     border-radius: 10px;
 
   }
@@ -70,26 +80,27 @@ h2 {color:lightgreen;
     width: 100%;
     padding: 10px;
     outline: none;
-    color: lightgreen;
+    color: #2e4a62;
   }
   
   .input-field:focus {
-    border: 2px solid lightgreen;
+    border: 2px solid #b4b7ba;
     
   }
   
   /* Set a style for the submit button */
   .btn {
-    background-color: darkslategray;
-    color: lightgreen;
+    background-color: #b4b7ba;
+    color: #2e4a62;
     padding: 20px 20px;
-    border: 2px solid lightgreen;
+    border: 2px solid #eadedb;
     border-radius: 15px; 
     cursor: pointer;
     height: 90%;
     width: 100%;
     opacity: 0.9;
     text-align: center;
+    font-size: 24px;
   }
   .input{
       height: 200%;
@@ -137,3 +148,5 @@ input[type=text], select, textarea {
     background-color: #f2f2f2;
     padding: 20px;
   }
+
+  
