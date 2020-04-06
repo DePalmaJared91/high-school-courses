@@ -1,4 +1,184 @@
-body {
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    background:#92bde7;
+    color:#485e74;
+    line-height:1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:1em;
+   
+  }
+ 
+
+ 
+
+
+    
+
+
+
+
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+   
+  
+    border-radius: 15px;
+    font-family: sans-serif;
+
+} 
+
+p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+   
+  
+    border-radius: 15px;
+    font-family: sans-serif;
+}
+li.tab{ 
+    text-align: center;
+        background-color: #92bde7;
+        border: 2px solid #c9e6ff;
+       border-radius: 15px;
+       font-family: sans-serif;
+  
+    
+}
+  
+  .container{
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+    border-radius: 25px;
+    
+  }
+  
+  ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+
+    
+  }
+  
+  .brand{
+    text-align: center;
+  }
+  
+  .brand span{
+    color:#fff;
+  }
+  
+  .wrapper{
+    
+    border-radius: 25px;
+  }
+  
+  .wrapper > *{
+    padding: 1em;
+    border-radius: 25px;
+  }
+  
+  .company-info{
+    background:#c9e6ff;
+    border-radius: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+  }
+  
+  .company-info h3, .company-info ul{
+    text-align: center;
+    margin:0 0 1rem 0;
+  }
+  
+  .contact{
+    background:#f9feff;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  /* FORM STYLES */
+  .contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    border-radius: 15px;
+  }
+  
+  .contact form label{
+    display:block;
+  }
+  
+  .contact form p{
+    margin:0;
+  }
+  
+  .contact form .full{
+    grid-column: 1 / 3;
+  }
+  
+  .contact form button, .contact form input, .contact form textarea{
+    width:100%;
+    padding:1em;
+    border:1px solid #c9e6ff;
+    border-radius: 20px;
+  }
+  
+  .contact form button{
+    background:#c9e6ff;
+    border:0;
+    text-transform: uppercase;
+  }
+  
+  .contact form button:hover,.contact form button:focus{
+    background:#92bde7;
+    color:#fff;
+    outline:0;
+    transition: background-color 2s ease-out;
+  }
+  
+  .alert{
+    text-align: center;
+    padding:10px;
+    background:#79c879;
+    color:#fff;
+    margin-bottom:10px;
+    display:none;
+  }
+  
+  /* LARGE SCREENS */
+  @media(min-width:700px){
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .wrapper > *{
+      padding:2em;
+    }
+  
+    .company-info h3, .company-info ul, .brand{
+      text-align: left;
+    }
+  }
+  a.active{
+      color: #FFFFFF;
+      
+  }
+
+
+/* OLD DESIGN?
+ body {
     margin: 0;
     padding:0;
 background-color: #2e4a62; 
@@ -43,17 +223,13 @@ p {color: #2e4a62 ;
     border: 3px solid lightslategray;
     border-radius: 15px;
     font-family: sans-serif;
-
-
 }
 h2 {color:#eadedb;
     font-size: 24px;
     text-align: center;
     font-weight: bold;
     font-family: sans-serif;
-
 }
-
 .tab { 
     background-color: #2e4a62;
     border: 5px solid #b4b7ba;
@@ -61,14 +237,9 @@ h2 {color:#eadedb;
    font-family: sans-serif;
 
 }
-
- 
-
-
-
 .form-control {
     display: -ms-flexbox; /* IE10 */
-    display: flex;
+   /* display: flex;
     width: 100%;
     margin-bottom: 20px;
     font-family: sans-serif;
@@ -117,7 +288,7 @@ h2 {color:#eadedb;
   }
   
   /* Set a style for the submit button */
-  .btn {
+ /* .btn {
     background-color: lightslategray;
     color: #2e4a62;
     padding: 20px 20px;
@@ -145,45 +316,44 @@ h2 {color:#eadedb;
   }
 
   /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+/*input[type=text], select, textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+   /* padding: 12px; /* Some padding */ 
+   /* border: 1px solid #ccc; /* Gray border */
+    /*border-radius: 4px; /* Rounded borders */
+    /*box-sizing: border-box; /* Make sure that padding and width stays in place */
+    /*margin-top: 6px; /* Add a top margin */
+   /* margin-bottom: 16px; /* Bottom margin */
+   /* resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  /*}
   
   /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+  /*input[type=submit] {
     background-color: #b4b7ba ;
     color: lightslategray;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     font-family: sans-serif;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+  /*input[type=submit]:hover {
     background-color: #45a049;
   }
   
   /* Add a background color and some padding around the  */
-  .container {
+  /*.container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
     border: 3px solid lightslategray;
 
   }
-  form .submit{ 
+ -->
   
 
-  }
-  
+
 
   

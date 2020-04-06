@@ -1,6 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digital Education Platform</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    <h1>Let's Get Your Curriculum Online</h1> 
+    <p>An Online Database for Educational Curricula and Syllabi During the COVID-19 Pandemic </p> 
+  </div>
+</div>
+<ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+    <li class="tab"><a class="active" href="assets/About.html">About Us</a></li>
+    <li class="tab"><a class="active" href="#test2">Services</a></li>
+    <li class="tab"><a class="active" href="#test3">Contact Us</a></li>
+    
+  </ul>
+</nav>
+  <div class="container">
+    <h1 class="brand"><span>Education</span> Platform + Database</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Education Platform + Database</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> 525 Spruce Ln. DeRuyter, New York</li>
+          <li><i class="fa fa-phone"></i> (315).415.5793</li>
+          <li><i class="fa fa-envelope"></i>matlaw51@att.net</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>School</label>
+            <input type="text" name="school" id="school">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -22,69 +97,47 @@
         
       </ul>
       <div class = "contact-form">
-        <form id = "contact-form" method="post" action= "">
-
-
+        <form id = "contactForm" >
       
-
-      <form action="/action_page.php" style="max-width:500px;margin:auto">
         <h2>Register Form</h2>
-        <div class="form-control">
+        @TODO Validation-->
+       <!-- <div class="form-control">
           <i class="fa fa-user icon"></i>
-          <input class="input-field" type="text" placeholder="First Name" name="first" required>
+          <input class="input-field" type="text" placeholder="First Name" name="first"  id="first">
           <br>
         </div>
+
           <div class="form-control">
             <i class="fa fa-user icon"></i>
-            <input class="input-field" type="text" placeholder="Last Name" name="last">
+            <input class="input-field" type="text" placeholder="Last Name" name="last" id="last">
           </div>
+
           <div class="form-control">
             <i class="fa fa-phone icon"></i>
-            <input class="input-field" type="text" placeholder="Phone #" name="phone">
+            <input class="input-field" type="text" placeholder="Phone #" name="phone" id="phone">
           </div>
         <div class="form-control">
           <i class="fa fa-envelope icon"></i>
-          <input class="input-field" type="text" placeholder="Email" name="email">
-        </form>
+          <input class="input-field" type="text" placeholder="Email" name="email" id="email">
+        
         </div>
 
       </div>
-        
+        <input type="submit" class="form-control submit" value="SUBMIT">
+   </form>
 
-        <div class= "form">
-      
-        <input type="submit" class="form-control submit" value="SEND MESSAGE">
-      <div>
       </div>
       </div>
-    </form>
+      <script> src="main.js"</script>
+  </body>
 
-    <div class="contact-title">
-      <h1>A Company By Educators For Educators</h1>
-      <h2> Creating Educational Certainty in Uncertain Times</h2>
-      </div>
   
-    </body>
+  <div class="contact-title">
+    <h1>A Company By Educators For Educators</h1>
+    <h2> Creating Educational Certainty in Uncertain Times</h2>
+    </div>
 </html>
-
-
-      
-            
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <!-- This can be entered later on once I get this more organized -->
+ This can be entered later on once I get this more organized -->
     <!-- <form action="#">
         <div class="file-field input-field">
           <div class="btn">
